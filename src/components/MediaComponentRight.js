@@ -1,0 +1,118 @@
+import React from 'react'
+import styled from 'styled-components'
+
+const MediaComponent = () => {
+  return (
+    <MediaItemContainer>
+        <MediaTextContainer>
+            <Heading>
+                <h1>Media</h1>
+            </Heading>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus a, accusamus fugit aspernatur nobis nulla iure, asperiores, pariatur voluptatum at aperiam praesentium! Et corporis velit laborum eos molestias repellat accusamus?</p>
+            <LearnMoreContainer>
+                <LearnMoreButton>Learn More</LearnMoreButton>
+            </LearnMoreContainer>
+        </MediaTextContainer>
+        <MediaImageHolder>
+            <img priority={true} src="/caro.jpg" alt="media" width={550} height={400} />
+        </MediaImageHolder>
+    </MediaItemContainer>
+  )
+}
+
+export default MediaComponent;
+
+const MediaItemContainer = styled.div`
+    width: auto;
+    height: auto;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    /* border: 2px solid white; */
+    /* margin-bottom: 100px; */
+
+    @media (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 10px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    
+`
+const MediaTextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    /* border: 1px solid black; */
+    flex: 1;
+
+    > p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        color: #fff;
+        padding-top: 20px;
+
+    }
+
+    /* @media (max-width: 768px) {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    } */
+
+    
+`
+const Heading = styled.div`
+    border-bottom: 2px solid white;
+
+    > h1 {
+        font-size: 40px;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        margin-block-end: 0.3em;
+        /* border-bottom: 1px solid white; */
+    }
+`
+
+const LearnMoreContainer = styled.div`
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border: 1px solid white; */
+    width: 200px;
+
+`
+
+const LearnMoreButton = styled.button`
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background-color: #fff;
+        color: #333;
+        border: 1px solid #333;
+        transition: all 0.4s ease-in-out;
+        font-weight: 400;
+        transform: scale(1.1);
+    }
+
+`
+const MediaImageHolder = styled.div``
