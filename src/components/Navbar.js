@@ -32,12 +32,12 @@ const Navbar = () => {
             </OpenLinksButton>
             {isOpen && (
                 <NavbarHumburgerContainer>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/projects">Projects</a>
-                    <a href="/media">Media</a>
-                    <a href="/partnerships">Partnerships</a>
-                    <a href="/team">OurTeam</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/media">Media</Link>
+                    <Link to="/partnerships">Partnerships</Link>
+                    <Link to="/team">OurTeam</Link>
                 </NavbarHumburgerContainer>
             )}
         </NavbarContainer>
@@ -71,6 +71,13 @@ const NavLogo = styled.div`
     margin-left: 10px;
     padding-top: 10px;
      /* border: 1px solid black; */
+
+    @media (max-width: 768px) {
+        > img {
+            width: 230px;
+            height: 50px;
+        }
+    }
 
     `
 const NavLinks = styled.div`
@@ -125,6 +132,11 @@ const NavbarHumburgerContainer = styled.div`
         color: #fff;
         
         /* transform: translate(-0%, -0%); */
+
+        > a {
+            text-decoration: none;
+            color: #fff;
+        }
         
     }
 `
