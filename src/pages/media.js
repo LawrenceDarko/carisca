@@ -9,6 +9,14 @@ import MediaComponentRight from '../components/MediaComponentRight';
 const Media = () => {
 
   const Title = "Media"
+  const MediaOneTitle = ""
+  const MediaOneBody = ""
+  const MediaTwoTitle = ""
+  const MediaTwoBody = ""
+  const MediaThreeTitle = ""
+  const MediaThreeBody = ""
+  const MediaFourTitle = ""
+  const MediaFourBody = ""
 
   return (
     <>
@@ -16,10 +24,10 @@ const Media = () => {
       <OtherPagesCarousel title ={Title}/>
       <PageWrapper>
         <MediaComponentContainer>
-            <MediaComponent />
-            <MediaComponentRight />
-            <MediaComponent />
-            <MediaComponentRight />
+            <MediaComponent MediaOneTitle={MediaOneTitle} MediaOneBody={MediaOneBody} />
+            <MediaComponentRight MediaTwoTitle={MediaTwoTitle} MediaTwoBody={MediaTwoBody} />
+            <MediaComponent MediaThreeTitle={MediaThreeTitle} MediaThreeBody={MediaThreeBody} />
+            <MediaComponentRight MediaFourTitle={MediaFourTitle} MediaFourBody={MediaFourBody} />
         </MediaComponentContainer>
         
         {/* <h1>Media</h1> */}
@@ -43,7 +51,7 @@ const PageWrapper = styled.div`
     /* padding-right: 10px; */
 `
 const MediaComponentContainer = styled.div`
-    width: 100%;
+    width: auto;
     /* height: 100%; */
     display: flex;
     flex-direction: column;
