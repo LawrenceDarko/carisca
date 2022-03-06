@@ -14,7 +14,7 @@ const MediaComponent = () => {
             </LearnMoreContainer>
         </MediaTextContainer>
         <MediaImageHolder>
-            <img priority={true} src="/caro.jpg" alt="media" width={550} height={400} />
+            <img priority={true} src="/caro.jpg" alt="media" width={550} height={380} />
         </MediaImageHolder>
     </MediaItemContainer>
   )
@@ -115,4 +115,20 @@ const LearnMoreButton = styled.button`
     }
 
 `
-const MediaImageHolder = styled.div``
+const MediaImageHolder = styled.div`
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 1px solid white; */
+    /* flex: 1; */
+    /* scale box */
+    /* position: relative; */
+    height: 380px;
+
+    @media (max-width: 768px) {
+        > img {
+            width: 380px;
+            height: 250px;
+        }
+    }
+`

@@ -5,7 +5,7 @@ const MediaComponent = () => {
   return (
     <MediaItemContainer>
         <MediaImageHolder>
-            <img priority={true} src="/caro.jpg" alt="media" width={550} height={400} />
+            <img priority={true} src="/caro.jpg" alt="media" width={550} height={380} />
         </MediaImageHolder>
         <MediaTextContainer>
             <Heading>
@@ -125,6 +125,13 @@ const MediaImageHolder = styled.div`
     /* border: 1px solid white; */
     /* flex: 1; */
     /* scale box */
-    position: relative;
+    /* position: relative; */
     height: 380px;
+
+    @media (max-width: 768px) {
+        > img {
+            width: 380px;
+            height: 250px;
+        }
+    }
 `
