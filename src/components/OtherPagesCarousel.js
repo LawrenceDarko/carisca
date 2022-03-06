@@ -3,9 +3,10 @@ import styled from "styled-components"
 
 
 const OtherPagesCarousel = ({title}) => {
+
   return (
     <PageHeaderImageContainer>
-        <h1>{title}</h1>
+      {title === "Partnerships" ?<h1 style={{fontSize: 35}}>{title}</h1> : <h1>{title}</h1>}
     </PageHeaderImageContainer>
   )
 }
@@ -34,7 +35,7 @@ const PageHeaderImageContainer = styled.div`
 
     > h1 {
         color: #fff;
-        font-size: 50px;
+        font-size: 2.5rem;
         line-height: 1;
         font-weight: 800;
         margin-block-start: 0em;
@@ -48,7 +49,7 @@ const PageHeaderImageContainer = styled.div`
 
         &:hover{
             border-bottom: 5px solid #FFB733;;
-            font-size: 70px
+            /* font-size: 70px */
         }
     }
 `
