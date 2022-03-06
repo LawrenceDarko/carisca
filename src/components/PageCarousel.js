@@ -10,8 +10,8 @@ const PageCarousel = () => {
   return (
     <ImageContainer priority={true}>
         <CarouselTextContainer>
-            <motion.h1 initial={{x:-100}} animate={{x:10}} transition={{type: 'spring', duration: 3, damping: 5, stiffness: 150}}>KNUST CARISCA <span style={{color: '#fff'}}>INNOVATION CENTER</span></motion.h1>
-            <motion.h2 initial={{x:100}} animate={{x:10}} transition={{type: 'spring', duration: 3, damping: 10, stiffness: 150}}>The Knust hatchlab at the school of Business is churning out excellent innovations beyong borders</motion.h2>
+            <motion.h1 initial={{x:-100}} animate={{x:10}} transition={{type: 'spring', duration: 3, damping: 5, stiffness: 150}}>CARISCA <span style={{color: '#fff'}}>INNOVATION LAB</span></motion.h1>
+            <motion.h2 initial={{x:100}} animate={{x:10}} transition={{type: 'spring', duration: 3, damping: 10, stiffness: 150}}>Creating Excellent Innovations Beyong Borders</motion.h2>
             <CustomButton>
                 <a href="#">TELL US ABOUT A PROJECT</a>
             </CustomButton>
