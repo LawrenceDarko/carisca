@@ -32,7 +32,7 @@ const OurServices = () => {
           pagination={{ clickable: true }}
           effect="coverflow"
           coverflowEffect={{
-            rotate: 50,
+            rotate: 30,
             stretch: 0,
             depth: 600,
             modifier: 1,
