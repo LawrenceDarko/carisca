@@ -13,8 +13,8 @@ function Home() {
       <BodyWrapper>
             <WhoWeAre>
              
-                <h2>Luminosity is an interdisciplinary research and development lab driven by a hand-selected team of high-performing students from Arizona State University. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nostrum unde id harum modi doloribus mollitia! Nisi sequi corrupti molestiae natus, expedita quis tempora aliquid? Magnam ipsa rem obcaecati maiores!</h2>
-                <h2>Our mission is to create a new generation of technology that will revolutionize the way we live, work, and play. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia pariatur sit facere iusto a, amet recusandae incidunt reprehenderit eos. Laudantium quasi necessitatibus hic consectetur dolor sint odio illum dicta nam?</h2>
+                <h2>The Carisca Innovations Lab is an interdisciplinary research and development lab driven by a hand-selected team of high-performing technical and creative students from KNUST. At the behest of unexampled level of graduate unemployment and an ever-increasing demand for highly skilled labour, it is imperative for University of Science and Technology to churn out befitting graduates who, not only thrive in workplaces, but bring their innovative and creative geniuses to fore while leveraging on entrepreneurship in driving societal transformation. We enable students practically apply their knowledge and skills in solving challenges of societies while creating opportunities for employment after school.</h2>
+                <h2>Our mission is to advance the application of knowledge in science and technology through creating an environment for undertaking relevant research, design, prototyping, entrepreneurship training and community engagement to propel the entrepreneurial aspirations of students, enabling them to learn, engage and launch revolutionary ventures presenting solutions to critical challenges facing today’s world whiles positioning KNUST as the most innovative university in Africa. </h2>
              
             </WhoWeAre>
             <UpcomingPrograms>
