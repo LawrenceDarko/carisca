@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar'
 import OtherPagesCarousel from '../components/OtherPagesCarousel';
 import TheProjects from '../components/TheProjects';
+import {Helmet} from 'react-helmet'
 
 
 const Projects = () => {
@@ -33,6 +34,13 @@ const Projects = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Projects | Carisca Lab</title>
+        <meta name="description" content="Projects Page of the Carisca Lab"/>
+        <meta name="keywords" content="carisca, cariscalab, luminosity, knust, incubation lab, innovation, ksb"/>
+        <meta name="author" content="Baah Lawrence Darko"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </Helmet>
       <Navbar />
       <OtherPagesCarousel title ={Title}/>
       <PageWrapper>

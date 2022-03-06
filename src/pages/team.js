@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import OtherPagesCarousel from '../components/OtherPagesCarousel';
 import OurTeamGallery from '../components/OurTeamGallery';
+import {Helmet} from 'react-helmet'
 
 const Team = () => {
 
@@ -22,6 +23,13 @@ const Team = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Team | Carisca Lab</title>
+        <meta name="description" content="Team Page of the Carisca Lab"/>
+        <meta name="keywords" content="carisca, cariscalab, luminosity, knust, incubation lab, innovation, ksb"/>
+        <meta name="author" content="Baah Lawrence Darko"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </Helmet>
       <Navbar />
       <OtherPagesCarousel title ={Title}/>
       <PageWrapper>

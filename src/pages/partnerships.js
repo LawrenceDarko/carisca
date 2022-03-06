@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Navbar from '../components/Navbar'
 import OtherPagesCarousel from '../components/OtherPagesCarousel';
 import Footer from '../components/Footer';
+import {Helmet} from 'react-helmet'
 
 const Partnerships = () => {
 
@@ -10,6 +11,13 @@ const Partnerships = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Partnerships | Carisca Lab</title>
+        <meta name="description" content="Partnerships Page of the Carisca Lab"/>
+        <meta name="keywords" content="carisca, cariscalab, luminosity, knust, incubation lab, innovation, ksb"/>
+        <meta name="author" content="Baah Lawrence Darko"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </Helmet>
       <Navbar />
       <OtherPagesCarousel title ={Title}/>
       <PageWrapper>

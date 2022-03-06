@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import OtherPagesCarousel from '../components/OtherPagesCarousel';
 import Footer from '../components/Footer';
 import MediaComponentRight from '../components/MediaComponentRight';
+import {Helmet} from 'react-helmet'
 
 const Media = () => {
 
@@ -20,6 +21,13 @@ const Media = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Media | Carisca Lab</title>
+        <meta name="description" content="Media Page of the Carisca Lab"/>
+        <meta name="keywords" content="carisca, cariscalab, luminosity, knust, incubation lab, innovation, ksb"/>
+        <meta name="author" content="Baah Lawrence Darko"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </Helmet>
       <Navbar />
       <OtherPagesCarousel title ={Title}/>
       <PageWrapper>

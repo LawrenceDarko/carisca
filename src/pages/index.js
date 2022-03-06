@@ -4,10 +4,18 @@ import Navbar from '../components/Navbar'
 import PageCarousel from '../components/PageCarousel'
 import OurServices from '../components/OurServices'
 import Footer from '../components/Footer'
+import {Helmet} from 'react-helmet'
 
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>Home | Carisca Lab</title>
+        <meta name="description" content="Homepage of the Carisca Lab"/>
+        <meta name="keywords" content="carisca, cariscalab, luminosity, knust, incubation lab, innovation, ksb"/>
+        <meta name="author" content="Baah Lawrence Darko"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </Helmet>
       <Navbar />
       <PageCarousel />
       <BodyWrapper>
