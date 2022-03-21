@@ -23,7 +23,7 @@ const Navbar = () => {
                 <Link to="/projects">Projects</Link>
                 <Link to="/media">Media</Link>
                 <Link to="/partnerships">Partnerships</Link>
-                <Link to="/team">OurTeam</Link>
+                <Link to="/team">Our Team</Link>
             </NavLinks>
             {/* <Burger /> */}
             <OpenLinksButton onClick={()=> {setIsOpen(!isOpen)}}>
@@ -37,7 +37,7 @@ const Navbar = () => {
                     <Link to="/projects">Projects</Link>
                     <Link to="/media">Media</Link>
                     <Link to="/partnerships">Partnerships</Link>
-                    <Link to="/team">OurTeam</Link>
+                    <Link to="/team">Our Team</Link>
                 </NavbarHumburgerContainer>
             )}
         </NavbarContainer>
@@ -63,6 +63,10 @@ const NavbarContainer = styled.div`
     height: 80px;
     /* width: 218.5vh; */
     /* border: 1px solid black; */
+
+    /* @media only screen and (min-device-width : 0px) and (max-device-width :768px){
+        display: none;
+    } */
     
 `
 const NavLogo = styled.div`
@@ -99,6 +103,7 @@ const NavLinks = styled.div`
 
     > a {
         margin-left: 20px;
+        white-space: nowrap;
         /* margin-top: 25px; */
         text-decoration: none;
         color: #fff;
@@ -110,6 +115,7 @@ const NavLinks = styled.div`
             color: #fff;
             /* font-size: 20px; */
             border-bottom: 5px solid #66a3a3;
+        }
 
     }
 
@@ -117,7 +123,7 @@ const NavLinks = styled.div`
 const NavbarHumburgerContainer = styled.div`
 /* @media only screen and (min-device-width : 0px) and (max-device-width :768px){ */
         display: flex;
-        height: 580px;
+        height: auto;
         width: 300px;
         top: 0;
         right: 0;
@@ -129,13 +135,18 @@ const NavbarHumburgerContainer = styled.div`
         margin-top: 0px;
         padding-top: 50px;
         background-color: #333;
-        color: #fff;
+        /* color: #fff; */
+        opacity: 0.95;
+        overflow: scroll !important;
+
         
         /* transform: translate(-0%, -0%); */
 
         > a {
             text-decoration: none;
+            white-space: nowrap;
             color: #fff;
+            padding-bottom: 3rem;
         }
         
     }

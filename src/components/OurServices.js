@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "styled-components"
@@ -7,7 +7,6 @@ import 'swiper/css';
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 // import "../styles/globals.css"
-
 
 // Import Swiper styles
 // import "swiper/css";
@@ -21,6 +20,10 @@ import "swiper/css/pagination";
 SwiperCore.use([Autoplay, Navigation, Pagination, EffectCoverflow]);
 
 const OurServices = () => {
+
+
+  // const [checkMobile, setCheckMobile] = useState(false)
+
   return (
     <ServicesCarousel>
         <OurServicesTextContainer>
@@ -40,13 +43,13 @@ const OurServices = () => {
           }}
           loop={true}
           autoplay={{
-              delay: 1000,
+              delay: 1800,
               disableOnInteraction: false,
           }}
           // modules={[Autoplay, Pagination, Navigation]}
-          slidesPerView={4}
+          slidesPerView={3}
           centeredSlides={true}
-          style={{ height: "500px", width: "100%", position: 'relative', zIndex: 1}}
+          style={{ height: "360px", width: "100%", position: 'relative', zIndex: 1}}
           className="sliderContainer"
         >
           <SwiperSlide className="theSwiper"
@@ -134,6 +137,11 @@ const ServicesCarousel = styled.div`
     background-position: center;
     background-attachment: fixed;
      /* border: 1px solid black; */
+
+    /* @media (max-width: 768px) {
+      ${props => props.setCheckMobile === true ? '2' : '1'}
+    } */
+
 
     `
 const OurServicesTextContainer = styled.div`

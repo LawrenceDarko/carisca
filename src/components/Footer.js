@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from "styled-components"
 
 const Footer = () => {
@@ -13,12 +14,21 @@ const Footer = () => {
                 <p>We help companies focus on growth through innovation and disruptive technologies </p>
             </FooterOne>
             <FooterTwo>
-                <h2>Footer Two</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem deleniti dolorem nisi, libero voluptas error nam qui voluptatum exercitationem praesentium, pariatur, alias recusandae facilis? Nisi ipsum sint illum ad officia!</p>
+                <h2>Quick Links</h2>
+                <Link to="/">◃Home</Link>
+                <Link to="/about">◃About</Link>
+                <Link to="/projects">◃Projects</Link>
+                <Link to="/media">◃Media</Link>
+                <Link to="/partnerships">◃Partnerships</Link>
+                <Link to="/team">◃Our Team</Link>
             </FooterTwo>
             <FooterThree>
-                <h2>Footer Three</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat cum, dolorum laboriosam aliquam animi assumenda tenetur velit hic, officia saepe inventore officiis necessitatibus distinctio rem itaque, voluptates voluptas perferendis architecto!</p>
+                <h2>Get in Touch</h2>
+                <p>KNUST School of Business,<br/>
+                    University Post Office,<br/>
+                    KNUST-Kumasi Ghana.<br/><br/>
+                    Email: <Link to="mailto:" target="_blank" rel="noopener noreferrer">knustksb@knust.edu.gh</Link>
+                    </p>
             </FooterThree>
         </FooterContainer>
         <FinalFooter>
@@ -62,7 +72,7 @@ const FooterOne = styled.div`
 
     > h2 {
         color: #FFB733;
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 600;
         font-family: 'Open Sans', sans-serif;
     }
@@ -71,25 +81,31 @@ const FooterOne = styled.div`
         color: #bebebe;
         letter-spacing: 1px;
     }
+
+    
     /* align-items: center; */
 
 `
 const FooterTwo = styled.div`
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
     /* justify-content: center; */
     /* align-items: center; */
     flex: 0.4;
 
     > h2 {
         color: #FFB733;
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 600;
         font-family: 'Open Sans', sans-serif;
+        /* align-items: center; */
     }
 
-    > p {
+    > a {
         color: #bebebe;
+        letter-spacing: 1px;
+        text-decoration: none;
     }
 `
 const FooterThree = styled.div`
@@ -101,13 +117,19 @@ const FooterThree = styled.div`
 
     > h2 {
         color: #FFB733;
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 600;
         font-family: 'Open Sans', sans-serif;
     }
 
     > p {
         color: #bebebe;
+    }
+
+    > p > a {
+        color: #bebebe;
+        letter-spacing: 1px;
+        text-decoration: none;
     }
 `
 const FooterLogoContainer = styled.div`

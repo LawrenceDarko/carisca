@@ -45,6 +45,7 @@ const PageHeaderImageContainer = styled.div`
         font-family: 'Open Sans', sans-serif;
         padding-top: 50px;
         cursor: pointer;
+        white-space: nowrap;
         
 
         &:hover{
