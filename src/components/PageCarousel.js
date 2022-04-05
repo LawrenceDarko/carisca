@@ -51,6 +51,7 @@ const ImageContainer = styled.div`
         align-items: left;
         align-content: left;
         justify-content: space-around;
+        background-attachment: scroll !important;
   }
 
   @media only screen and (min-device-width : 10px) and (max-device-width : 314px) {
