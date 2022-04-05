@@ -43,7 +43,7 @@ export default Footer
 const FooterContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* height: 60vh; */
     background-color: #333;
     bottom: 0;
@@ -89,7 +89,7 @@ const FooterOne = styled.div`
 const FooterTwo = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     /* justify-content: center; */
     /* align-items: center; */
     flex: 0.4;
