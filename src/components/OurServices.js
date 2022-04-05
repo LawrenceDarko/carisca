@@ -46,6 +46,7 @@ const OurServices = () => {
               delay: 1800,
               disableOnInteraction: false,
           }}
+          slidesPerView={1}
           breakpoints={{
             // when window width is >= 640px
             640: {
@@ -63,7 +64,7 @@ const OurServices = () => {
             
           }}
           // modules={[Autoplay, Pagination, Navigation]}
-          slidesPerView={3}
+          
           centeredSlides={true}
           style={{ height: "360px", width: "100%", position: 'relative', zIndex: 1}}
           className="sliderContainer"
