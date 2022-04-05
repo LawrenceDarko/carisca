@@ -1,12 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "styled-components"
-import SwiperCore, { Autoplay, Navigation, Pagination, EffectCoverflow} from "swiper"
+// import SwiperCore, { Autoplay, Navigation, Pagination, EffectCoverflow} from "swiper"
 import 'swiper/css';
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 // import "../styles/globals.css"
+
 
 // Import Swiper styles
 // import "swiper/css";
@@ -16,8 +17,8 @@ import "swiper/css/pagination";
 // import "./styles.css";
 
 // import required modules
-// import { EffectCoverflow, Pagination } from "swiper";
-SwiperCore.use([Autoplay, Navigation, Pagination, EffectCoverflow]);
+import { EffectCoverflow, Pagination, Autoplay, Navigation, } from "swiper";
+// SwiperCore.use([Autoplay, Navigation, Pagination, EffectCoverflow]);
 
 const OurServices = () => {
 
@@ -46,6 +47,7 @@ const OurServices = () => {
               delay: 1800,
               disableOnInteraction: false,
           }}
+          modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
           slidesPerView={1}
           breakpoints={{
             // when window width is >= 640px
