@@ -72,7 +72,7 @@ const ItemsContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 90%;
+    width: 94%;
     margin: 0 auto;
     padding-bottom: 50px;
     /* border: 1px solid black; */

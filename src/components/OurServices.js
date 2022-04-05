@@ -46,6 +46,22 @@ const OurServices = () => {
               delay: 1800,
               disableOnInteraction: false,
           }}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              // width: 640,
+              slidesPerView: 2,
+              
+            },
+            // when window width is >= 768px
+            768: {
+              // width: 768,
+              slidesPerView: 3,
+              // spaceBetween: 40,
+            },
+            // when window width is >= 1024px
+            
+          }}
           // modules={[Autoplay, Pagination, Navigation]}
           slidesPerView={3}
           centeredSlides={true}
