@@ -160,7 +160,9 @@ const ServicesCarousel = styled.div`
     /* @media (max-width: 768px) {
       ${props => props.setCheckMobile === true ? '2' : '1'}
     } */
-
+    @media (max-width: 768px) {
+      background-attachment: scroll !important;
+    }
 
     `
 const OurServicesTextContainer = styled.div`

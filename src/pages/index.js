@@ -84,13 +84,15 @@ const WhoWeAre = styled.div`
         font-size: 30px;
         font-weight: 300;
         font-family: 'Open Sans', sans-serif;
+
 /*        
         margin-block-start: 1.3em;
         margin-block-end: 1.3em; */
     }
 
-    @media only screen and (min-device-width : 50px) and (max-device-width : 768px){
+    @media only screen and (min-device-width : 0px) and (max-device-width : 768px){
         padding: 5vh;
+        background-attachment: scroll !important;
       > h2 {
         font-size: 20px;
       }
