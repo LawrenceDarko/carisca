@@ -149,7 +149,7 @@ const NavbarHumburgerContainer = styled.div`
             padding-bottom: 3rem;
         }
         
-    }
+    /* } */
 `
 
 const OpenLinksButton = styled.div`
