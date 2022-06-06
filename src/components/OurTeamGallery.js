@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const OurTeamGallery = ({imageLink}) => {
 
   return (
-    <ImageItem priority={true} imageLink={imageLink}>
+    <ImageItem imageLink={imageLink}>
         {/* <Image src={imageLink} width={400} height={400} alt="team-1"/> */}
         <h1>Name</h1>
         <p>This is the position</p>

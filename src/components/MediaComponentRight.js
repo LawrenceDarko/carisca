@@ -14,7 +14,7 @@ const MediaComponent = () => {
             </LearnMoreContainer>
         </MediaTextContainer>
         <MediaImageHolder>
-            <img priority={true} src="/caro.jpg" alt="media" width={550} height={380} />
+            <img src="/caro.jpg" alt="media" width={550} height={380} />
         </MediaImageHolder>
     </MediaItemContainer>
   )

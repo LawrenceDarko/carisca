@@ -4,10 +4,11 @@ import Navbar from '../components/Navbar'
 import PageCarousel from '../components/PageCarousel'
 import OurServices from '../components/OurServices'
 import Footer from '../components/Footer'
-import {Helmet} from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function Home() {
   return (
+    <HelmetProvider>
     <>
       <Helmet>
         <title>Home | Carisca Lab</title>
@@ -47,6 +48,7 @@ function Home() {
             <Footer />
       </BodyWrapper>
     </>
+    </HelmetProvider>
   )
 }
 

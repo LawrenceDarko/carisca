@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import OtherPagesCarousel from '../components/OtherPagesCarousel';
 import OurTeamGallery from '../components/OurTeamGallery';
-import {Helmet} from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Team = () => {
 
@@ -22,6 +22,7 @@ const Team = () => {
 
 
   return (
+    <HelmetProvider>
     <>
       <Helmet>
         <title>Team | Carisca Lab</title>
@@ -48,6 +49,7 @@ const Team = () => {
          <Footer />
       </PageWrapper>
     </>
+    </HelmetProvider>
   )
 };
 

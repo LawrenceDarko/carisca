@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import OtherPagesCarousel from '../components/OtherPagesCarousel';
 import Footer from '../components/Footer';
 import MediaComponentRight from '../components/MediaComponentRight';
-import {Helmet} from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Media = () => {
 
@@ -20,6 +20,7 @@ const Media = () => {
   const MediaFourBody = ""
 
   return (
+    <HelmetProvider>
     <>
       <Helmet>
         <title>Media | Carisca Lab</title>
@@ -42,6 +43,7 @@ const Media = () => {
         <Footer />
       </PageWrapper>
     </>
+    </HelmetProvider>
   )
 };
 

@@ -3,11 +3,12 @@ import styled from "styled-components";
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import OtherPagesCarousel from '../components/OtherPagesCarousel';
-import {Helmet} from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const About = () => {
   const Title = "About US"
   return (
+    <HelmetProvider>
     <>
       <Helmet>
         <title>About | Carisca Lab</title>
@@ -70,6 +71,7 @@ const About = () => {
           <Footer />
       </PageWrapper>
     </>
+    </HelmetProvider>
   )
 }
 

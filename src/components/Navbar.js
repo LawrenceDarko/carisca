@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
         <NavbarContainer className='navbar'>
             <NavLogo>
-                <img priority={true} className='NavbarImage' src="/hatchlogo.png" width="270px" height="60px" alt='Logo' />
+                <img className='NavbarImage' src="/hatchlogo.png" width="270px" height="60px" alt='Logo' />
             </NavLogo>
                 {/* <Burger /> */}
             <NavLinks>

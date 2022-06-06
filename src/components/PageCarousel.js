@@ -8,7 +8,7 @@ import {motion} from 'framer-motion'
 
 const PageCarousel = () => {
   return (
-    <ImageContainer priority={true}>
+    <ImageContainer >
         <CarouselTextContainer>
             <motion.h1 initial={{x:-100}} animate={{x:10}} transition={{type: 'spring', duration: 3, damping: 5, stiffness: 150}}>CARISCA <span style={{color: '#fff'}}>INNOVATION LAB</span></motion.h1>
             <motion.h2 initial={{x:100}} animate={{x:10}} transition={{type: 'spring', duration: 3, damping: 10, stiffness: 150}}>Creating Excellent Innovations Beyong Borders</motion.h2>

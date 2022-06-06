@@ -7,7 +7,7 @@ const TheProjects = ({color, title, imageLink}) => {
     // style={{backgroundColor: color}}
         <ProjectItem color={color}>
             <ProjectImage>
-                <img priority={true} src={imageLink} alt="project"/>
+                <img src={imageLink} alt="project"/>
             </ProjectImage>
             <h1>{title}</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nemo vitae numquam accusantium adipisci rem, animi non, quos quisquam consequuntur mollitia error magni, omnis laboriosam impedit iusto modi illo? Vel?</p>

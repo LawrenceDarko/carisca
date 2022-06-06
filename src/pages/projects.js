@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar'
 import OtherPagesCarousel from '../components/OtherPagesCarousel';
 import TheProjects from '../components/TheProjects';
-import {Helmet} from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 const Projects = () => {
@@ -33,6 +33,7 @@ const Projects = () => {
 
 
   return (
+    <HelmetProvider>
     <>
       <Helmet>
         <title>Projects | Carisca Lab</title>
@@ -61,6 +62,7 @@ const Projects = () => {
           <Footer />
       </PageWrapper>
     </>
+    </HelmetProvider>
     )
 };
 
