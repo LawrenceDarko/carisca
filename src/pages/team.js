@@ -39,12 +39,12 @@ const Team = () => {
             <OurTeamGallery imageLink={ImageOneLink}/>
             <OurTeamGallery imageLink={ImageTwoLink}/>
             <OurTeamGallery imageLink={ImageThreeLink}/>
-            <OurTeamGallery imageLink={ImageFourLink}/>
+            {/* <OurTeamGallery imageLink={ImageFourLink}/>
             <OurTeamGallery imageLink={ImageFiveLink}/>
             <OurTeamGallery imageLink={ImageSixLink}/>
             <OurTeamGallery imageLink={ImageSevenLink}/>
             <OurTeamGallery imageLink={ImageEightLink}/>
-            <OurTeamGallery imageLink={ImageNineLink}/>
+            <OurTeamGallery imageLink={ImageNineLink}/> */}
          </GalleryImagesContainer>
          <Footer />
       </PageWrapper>
