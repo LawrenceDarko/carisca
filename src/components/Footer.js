@@ -9,7 +9,7 @@ const Footer = () => {
             <FooterOne>
                 <h2>Carisca Innovation Lab</h2>
                 <FooterLogoContainer>
-                    <img src="/hatchlogo.png" width="260px" height="60px" alt='footer' />
+                    <img src="/clogo.png" width="220px" height="110px" alt='footer' />
                 </FooterLogoContainer>
                 <p>We help companies focus on growth through innovation and disruptive technologies </p>
             </FooterOne>

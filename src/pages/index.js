@@ -81,6 +81,10 @@ const WhoWeAre = styled.div`
     line-height: 1.5;
     /* background-color: #333; */
 
+    @media (max-width: 768px) {
+      background-attachment: scroll !important;
+    }
+
     > h2 {
         color: white;
         font-size: 30px;
