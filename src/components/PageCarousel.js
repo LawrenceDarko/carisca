@@ -127,7 +127,6 @@ const CarouselTextContainer = styled.div`
             font-size: 20px;
         }
         }
-    }
 
     @media only screen and (min-device-width : 482px) and (max-device-width : 1024px) {
         flex-direction: column;
