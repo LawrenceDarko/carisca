@@ -119,6 +119,10 @@ const ItemsContainer = styled.div`
     padding-bottom: 50px;
     box-sizing: border-box;
     /* border: 1px solid black; */
+
+    @media (max-width: 768px) {
+      padding: 5vh;
+    }
     
 `
 

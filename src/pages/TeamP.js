@@ -10,15 +10,10 @@ const Team = () => {
 
   const Title = "Our Team"
 
-  const ImageOneLink = "/team/caro1.webp"
-  const ImageTwoLink = "/team/caro1.webp"
-  const ImageThreeLink = "/team/caro1.webp"
-  const ImageFourLink = "/team/caro1.webp"
-  const ImageFiveLink = "/team/caro1.webp"
-  const ImageSixLink = "/team/caro1.webp"
-  const ImageSevenLink = "/team/caro1.webp"
-  const ImageEightLink = "/team/caro1.webp"
-  const ImageNineLink = "/team/caro1.webp"
+  const ImageOneLink = "/team/stephen.webp"
+  const ImageTwoLink = "/team/jesse.webp"
+  const ImageThreeLink = "/team/serbe.webp"
+
 
 
   return (
@@ -35,18 +30,12 @@ const Team = () => {
       <OtherPagesCarousel title ={Title}/>
       <PageWrapper>
         <h2>Gallery</h2>
-         <GalleryImagesContainer>
-            <OurTeamGallery imageLink={ImageOneLink}/>
-            <OurTeamGallery imageLink={ImageTwoLink}/>
-            <OurTeamGallery imageLink={ImageThreeLink}/>
-            {/* <OurTeamGallery imageLink={ImageFourLink}/>
-            <OurTeamGallery imageLink={ImageFiveLink}/>
-            <OurTeamGallery imageLink={ImageSixLink}/>
-            <OurTeamGallery imageLink={ImageSevenLink}/>
-            <OurTeamGallery imageLink={ImageEightLink}/>
-            <OurTeamGallery imageLink={ImageNineLink}/> */}
-         </GalleryImagesContainer>
-         <Footer />
+          <GalleryImagesContainer>
+              <OurTeamGallery name="Frimpong Stephen" position="Administrative Manager" imageLink={ImageOneLink}/>
+              <OurTeamGallery name="Jesse Anim" position="Technical Manager" imageLink={ImageTwoLink}/>
+              <OurTeamGallery name="Dr. John Serbe Marfo" position="Senior Technical Advisor, CARISCA" imageLink={ImageThreeLink}/>
+          </GalleryImagesContainer>
+          <Footer />
       </PageWrapper>
     </>
     </HelmetProvider>

@@ -161,8 +161,8 @@ const WhoWeAre = styled.div`
 
 const UpcomingPrograms = styled.div`
     align-items: center;
-    height: 122vh;
-    /* width: 100%; */
+    height: auto;
+    width: 100%;
     overflow: hidden;
     background-color: #2D2E32;
     display: flex;
@@ -172,6 +172,8 @@ const UpcomingPrograms = styled.div`
     overflow: hidden;
     background-color: rgba(0,0,0,0.8);
     z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 100px;
     /* border: 1px solid white; */
     
 

@@ -20,7 +20,7 @@ const Navbar = () => {
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/projects">Projects</Link>
-                    <Link to="/media">Media</Link>
+                    {/* <Link to="/media">Media</Link> */}
                     <Link to="/partnerships">Partnerships</Link>
                     <Link to="/team">Team</Link>
                 </NavLinks>
@@ -34,7 +34,7 @@ const Navbar = () => {
                         <Link to="/">Home</Link>
                         <Link to="/about">About</Link>
                         <Link to="/projects">Projects</Link>
-                        <Link to="/media">Media</Link>
+                        {/* <Link to="/media">Media</Link> */}
                         <Link to="/partnerships">Partnerships</Link>
                         <Link to="/team">Team</Link>
                     </NavbarHumburgerContainer>
@@ -77,8 +77,8 @@ const NavLogo = styled.div`
 
     @media (max-width: 768px) {
         > img {
-            width: 230px;
-            height: 50px;
+            width: 85px;
+            height: 40px;
         }
     }
 

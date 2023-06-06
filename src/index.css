@@ -21,8 +21,8 @@ code {
   box-sizing: border-box;
   width: 360px;
   border-radius: 8px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(30px);
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px); */
 }
 
 .ServiceHeading p{

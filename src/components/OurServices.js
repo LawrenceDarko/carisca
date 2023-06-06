@@ -122,14 +122,14 @@ export default OurServices;
 const ServicesCarousel = styled.div`
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    /* height: 120vh; */
     /* padding: 30px; */
     /* justify-content: space-between; */
     align-items: center;
     /* padding-bottom: 80px; */
     /* padding-right: 80px; */
     /* margin: 0 auto; */
-    padding: 13vh;
+    padding: 20vh;
 
     /* width: 100%; */
     background-color:  #f63309;
@@ -146,6 +146,7 @@ const ServicesCarousel = styled.div`
     } */
     @media (max-width: 768px) {
       background-attachment: scroll !important;
+      padding: 5vh;
     }
 
     `

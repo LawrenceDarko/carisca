@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const OurTeamGallery = ({imageLink}) => {
+const OurTeamGallery = ({imageLink, name, position}) => {
 
   return (
     <ImageItem imageLink={imageLink}>
         {/* <Image src={imageLink} width={400} height={400} alt="team-1"/> */}
-        <h1>Name</h1>
-        <p>This is the position</p>
+        <h1>{name}</h1>
+        <p>{position}</p>
     </ImageItem>
   )
 }
