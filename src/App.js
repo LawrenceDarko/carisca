@@ -1,6 +1,6 @@
 // import './App.css';\
 import React from 'react';
-import Index from './pages/Index.js';
+import Index from './pages/Home.js';
 import About from './pages/About.js';
 import Media from './pages/Media.js';
 import Projects from './pages/Projects.js';
