@@ -3,8 +3,8 @@ import React from 'react';
 import Index from './pages/Home.js';
 import About from './pages/AboutP.js';
 import Media from './pages/MediaP.js';
-import Projects from './pages/Projects.js';
-import Team from './pages/Team.js';
+import Projects from './pages/ProjectsP.js';
+import Team from './pages/TeamP.js';
 import Partnerships from './pages/Partnerships.js';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
