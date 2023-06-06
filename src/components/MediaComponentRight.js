@@ -25,7 +25,7 @@ export default MediaComponent;
 const MediaItemContainer = styled.div`
     width: auto;
     height: auto;
-    background-color: #333;
+    background-color: #2D2E32;
     display: flex;
     flex-direction: row;
     padding-left: 20px;
@@ -93,7 +93,7 @@ const LearnMoreContainer = styled.div`
 `
 
 const LearnMoreButton = styled.button`
-    background-color: #333;
+    background-color: #2D2E32;
     border: 1px solid #fff;
     color: #fff;
     font-size: 1.2rem;
@@ -107,8 +107,8 @@ const LearnMoreButton = styled.button`
 
     &:hover {
         background-color: #fff;
-        color: #333;
-        border: 1px solid #333;
+        color: #2D2E32;
+        border: 1px solid #2D2E32;
         transition: all 0.4s ease-in-out;
         font-weight: 400;
         transform: scale(1.1);

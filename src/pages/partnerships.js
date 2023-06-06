@@ -22,23 +22,23 @@ const Partnerships = () => {
       <Navbar />
       <OtherPagesCarousel title ={Title}/>
       <PageWrapper>
-         <SponsorshipsContainer>
-            <SponsorshipsTextContainer>
-              <h1>Our Sponsors and Partners</h1>
-              <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ducimus tempora reprehenderit soluta quidem! Ipsam non eum ab in veritatis, iste accusamus beatae totam quos dolores omnis ratione doloribus tempore.</h2>
-            </SponsorshipsTextContainer>
-            <SponsorshipsLogosContainer>
-                <img src="/sponsors/asu.png" width={400} height={110} alt="" />
-                <img src="/sponsors/usaid.png" width={320} height={110} alt="" />
-                <img src="/sponsors/knust.png" width={270} height={100} alt="" />
-                {/* <Image src="/sponsors/carisca.jpg" width={290} height={110} /> */}
-                
-            </SponsorshipsLogosContainer>
-         </SponsorshipsContainer>
-         <PresentAndPastSponsorshipsContainer>
-            {/* <h1>Present and Past Sponsorships</h1> */}
-         </PresentAndPastSponsorshipsContainer>
-         <Footer />
+          <SponsorshipsContainer>
+              <SponsorshipsTextContainer>
+                <h1>Our Sponsors and Partners</h1>
+                <p>The Carisca Innovations Lab has its partners as USAID and Arizona State University (ASU) with USAID being our main sponsors who are currently funding the five projects running at the innovation’s lab. Every other team, then stands the chance of funding from our main partners and sponsors. Carisca has also extended its reach and impact by forming strategic alliances with other giants in the Tec innovation industry including avenues to resort to for funding. The image of our main partners as well leads the discussions for funds at both local and international level.</p>
+              </SponsorshipsTextContainer>
+              <SponsorshipsLogosContainer>
+                  <img src="/sponsors/asu.png" width={400} height={110} alt="" />
+                  <img src="/sponsors/usaid.png" width={320} height={110} alt="" />
+                  <img src="/sponsors/knust.png" width={270} height={100} alt="" />
+                  {/* <Image src="/sponsors/carisca.jpg" width={290} height={110} /> */}
+                  
+              </SponsorshipsLogosContainer>
+          </SponsorshipsContainer>
+          <PresentAndPastSponsorshipsContainer>
+              {/* <h1>Present and Past Sponsorships</h1> */}
+          </PresentAndPastSponsorshipsContainer>
+          <Footer />
       </PageWrapper>
     </>
     </HelmetProvider>
@@ -62,6 +62,7 @@ const SponsorshipsContainer = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 80px;
     /* border: 1px solid black; */
 `
 const SponsorshipsTextContainer = styled.div`
@@ -83,10 +84,11 @@ const SponsorshipsTextContainer = styled.div`
         font-family: 'Open Sans', sans-serif;
     }
 
-    > h2 {
+    > p {
         color: white;
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 18px;
+        /* font-weight: 300; */
+        line-height: 25px;
         font-family: 'Open Sans', sans-serif;
         /* margin-block-start: 0em; */
     }

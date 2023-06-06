@@ -45,7 +45,7 @@ const FooterContainer = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     /* height: 60vh; */
-    background-color: #333;
+    background-color: #2D2E32;
     bottom: 0;
     left: 0;
     /* right: 0; */

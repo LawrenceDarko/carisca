@@ -9,40 +9,39 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     
 
-  return (
-      
-    <>
-        <NavbarContainer className='navbar'>
-            <NavLogo>
-                <img className='NavbarImage' src="/clogo.png" width="110px" height="60px" alt='Logo' />
-            </NavLogo>
-                {/* <Burger /> */}
-            <NavLinks>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/media">Media</Link>
-                <Link to="/partnerships">Partnerships</Link>
-                <Link to="/team">Our Team</Link>
-            </NavLinks>
-            {/* <Burger /> */}
-            <OpenLinksButton onClick={()=> {setIsOpen(!isOpen)}}>
-                {isOpen ? <>&#10005;</> : <>&#8801;</>}
-                
-            </OpenLinksButton>
-            {isOpen && (
-                <NavbarHumburgerContainer>
+    return (
+        <>
+            <NavbarContainer className='navbar'>
+                <NavLogo>
+                    <img className='NavbarImage' src="/clogo.png" width="80px" height="40px" alt='Logo' />
+                </NavLogo>
+                    {/* <Burger /> */}
+                <NavLinks>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/projects">Projects</Link>
                     <Link to="/media">Media</Link>
                     <Link to="/partnerships">Partnerships</Link>
-                    <Link to="/team">Our Team</Link>
-                </NavbarHumburgerContainer>
-            )}
-        </NavbarContainer>
-    </>
-  )
+                    <Link to="/team">Team</Link>
+                </NavLinks>
+                {/* <Burger /> */}
+                <OpenLinksButton onClick={()=> {setIsOpen(!isOpen)}}>
+                    {isOpen ? <>&#10005;</> : <>&#8801;</>}
+                    
+                </OpenLinksButton>
+                {isOpen && (
+                    <NavbarHumburgerContainer>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/media">Media</Link>
+                        <Link to="/partnerships">Partnerships</Link>
+                        <Link to="/team">Team</Link>
+                    </NavbarHumburgerContainer>
+                )}
+            </NavbarContainer>
+        </>
+    )
 };
 
 export default Navbar;
@@ -59,8 +58,8 @@ const NavbarContainer = styled.div`
     width: 100%; /* Full width */
     transition: top 0.3s;
     /* overflow: hidden; */
-    background-color: #333;
-    height: 80px;
+    background-color: #2D2E32;
+    height: 60px;
     /* width: 218.5vh; */
     /* border: 1px solid black; */
 
@@ -89,12 +88,13 @@ const NavLinks = styled.div`
     flex-direction: row;
     margin-right: 60px;
     justify-content: space-between;
-    height: 50px;
+    align-items: center;
+    height: 100%;
     /* width: 700px; */
     /* border: 1px solid #ccc; */
-    margin-top: 15px;
+    /* margin-top: 15px; */
     /* padding-bottom: 20px; */
-    padding-top: 10px;
+    /* padding-top: 10px; */
     /* box-sizing: border-box; */
 
     @media only screen and (min-device-width : 0px) and (max-device-width :768px){
@@ -107,8 +107,8 @@ const NavLinks = styled.div`
         /* margin-top: 25px; */
         text-decoration: none;
         color: #fff;
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 16px;
+        /* font-weight: 500; */
         font-family: 'Noto Sans', sans-serif;
 
         &:hover {
@@ -134,7 +134,7 @@ const NavbarHumburgerContainer = styled.div`
         margin-right: 0px;
         margin-top: 0px;
         padding-top: 50px;
-        background-color: #333;
+        background-color: #2D2E32;
         /* color: #fff; */
         opacity: 0.95;
         overflow: scroll !important;

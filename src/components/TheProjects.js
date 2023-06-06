@@ -1,27 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const TheProjects = ({color, title, imageLink}) => {
+const TheProjects = ({color, title, imageLink, description}) => {
 
-  return (
-    // style={{backgroundColor: color}}
-        <ProjectItem color={color}>
-            <ProjectImage>
-                <img src={imageLink} alt="project"/>
-            </ProjectImage>
-            <h1>{title}</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nemo vitae numquam accusantium adipisci rem, animi non, quos quisquam consequuntur mollitia error magni, omnis laboriosam impedit iusto modi illo? Vel?</p>
-        </ProjectItem>
-  )
+    return (
+        // style={{backgroundColor: color}}
+            <ProjectItem color={color}>
+                <ProjectImage>
+                    <img src={imageLink} alt="project"/>
+                </ProjectImage>
+                <h1>{title}</h1>
+                <p>{description}</p>
+            </ProjectItem>
+    )
 }
 
 export default TheProjects;
 
 
 const ProjectItem = styled.div`
-    width: 280px;
+    width: 320px;
     /* position: absolute; */
-    height: 650px;
+    height: 550px;
     background-color: ${props => props.color};
     margin-top: 10px;
     margin-bottom: 10px;
@@ -62,14 +62,14 @@ const ProjectImage = styled.div`
     width: auto;
     height: 30%;
     margin-top: 10px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     margin-left: 3%;
     margin-right: 3%;
     /* border: 1px solid #fff; */
 
     > img {
-        width: 263px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
 
     }
 `

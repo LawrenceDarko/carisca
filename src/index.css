@@ -14,3 +14,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.theSwiper {
+  background-color: rgba(232, 232, 232, 1);
+  padding: 40px;
+  box-sizing: border-box;
+  width: 360px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+.ServiceHeading p{
+  font-weight: bold;
+}

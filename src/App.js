@@ -1,11 +1,11 @@
 // import './App.css';\
 import React from 'react';
-import Index from './pages/index.js';
-import About from './pages/about.js';
-import Media from './pages/media.js';
-import Projects from './pages/projects.js';
-import Team from './pages/team.js';
-import Partnerships from './pages/partnerships.js';
+import Index from './pages/Index.js';
+import About from './pages/About.js';
+import Media from './pages/Media.js';
+import Projects from './pages/Projects.js';
+import Team from './pages/Team.js';
+import Partnerships from './pages/Partnerships.js';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

@@ -61,12 +61,11 @@ const About = () => {
             <h1>Our History</h1>
             <p>In its attempt to contribute to the overarching mission and vision of KNUST, the School of Business seeks to pioneer the establishment of the Carisca Innovations Lab to serve the whole university community. Concept for the Lab emerged in September 2019 when the Dean of the School discovered an interdisciplinary team of students attempting to apply their academic knowledge in solving dire needs in the Kumasi Metropolis but lack the appropriate resources in carrying through with it. The Dean also reckoned the fact that students at the Business School are unable to further develop their ideas after failing to win the KSB Business Idea Challenge organised annually. The tendency of these game-changing ideas going waste presents the impetus for pioneering the establishment of the Lab. </p>
             <p>The Lab, situated at the KNUST School of Business Graduate Building, serves as both an innovation and a maker space. The Lab shall be furnished with necessary logistics for ideation, design thinking, prototyping and assist students in commercialising their business. 
-               The Lab shall offer students the appropriate mentorship through industrial partnerships to help students hone their entrepreneurial skills. The lab will also provide an environment for students to write practical cases on their businesses for possible use in teaching and learning in lecture rooms. 
+              The Lab shall offer students the appropriate mentorship through industrial partnerships to help students hone their entrepreneurial skills. The lab will also provide an environment for students to write practical cases on their businesses for possible use in teaching and learning in lecture rooms. 
             </p>
             <p>In executing its mandate, the lab builds a vibrant teams of 5 from students with expertise in various disciplines with technical requirements of their respective projects. With a dedication to building the leadership competence of students, the lab is managed by students but overseen by a board of Directors. </p>
             <p>The lab forms partnerships with other innovation hubs, incubation centers, angel investment networks, companies and international bodies with aligned interests to acquire resources necessary for effective transformation of students’ innovative ideas into marketable products and ventures.  </p>
 
-            
           </AboutText>
           <Footer />
       </PageWrapper>
@@ -82,7 +81,7 @@ const PageWrapper = styled.div`
     /* width: 100%; */
     /* border-bottom: 1px solid #e6e6e6; */
     
-    /* background-color: #333; */
+    /* background-color: #2D2E32; */
 
 `
 const AboutText = styled.div`
@@ -92,8 +91,8 @@ const AboutText = styled.div`
     flex-direction: column;
     justify-content: center;
     background-color: #403F3E;
-    padding-left: 10vh;
-    padding-right: 10vh;
+    padding: 13vh;
+    box-sizing: border-box;
     /* padding-top: 10vh; */
 
     > h1 {
@@ -112,8 +111,9 @@ const AboutText = styled.div`
 
     > p {
         color: white;
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 18px;
+        /* font-weight: 300; */
+        line-height: 25px;
         font-family: 'Open Sans', sans-serif;
     }
 

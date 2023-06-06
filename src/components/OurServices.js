@@ -20,7 +20,7 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination, Autoplay, Navigation, } from "swiper";
 // SwiperCore.use([Autoplay, Navigation, Pagination, EffectCoverflow]);
 
-const OurServices = () => {
+const OurServices = ({services}) => {
 
 
   // const [checkMobile, setCheckMobile] = useState(false)
@@ -29,7 +29,7 @@ const OurServices = () => {
     <ServicesCarousel>
         <OurServicesTextContainer>
           <h2>Our Services</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsam suscipit hic facere harum fuga, odio nihil culpa iste in ullam, officiis quo non quam neque obcaecati consequuntur? Iusto, cumque?</p>
+          <p>Carisca Lab is an innovative hub that excels in research, design, and development. With a multidisciplinary approach and advanced technology, we provide services in research and knowledge creation, design and prototyping, ideation and concept development, mobile and web development, visualization and data science, and robotics and hardware development. Our solutions are transformative, enabling businesses to optimize processes and overcome complex problems. At Carisca Lab, our focus is on pushing the boundaries of innovation to drive problem-solving and help businesses achieve their goals.</p>
         </OurServicesTextContainer>
         <Swiper
           navigation
@@ -44,7 +44,7 @@ const OurServices = () => {
           }}
           loop={true}
           autoplay={{
-              delay: 1800,
+              delay: 2800,
               disableOnInteraction: false,
           }}
           modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
@@ -71,62 +71,46 @@ const OurServices = () => {
           style={{ height: "360px", width: "100%", position: 'relative', zIndex: 1}}
           className="sliderContainer"
         >
-          <SwiperSlide className="theSwiper"
-            style={{
-              backgroundImage:
-                "url(https://swiperjs.com/demos/images/nature-1.jpg)"
-            }}
+          {services.map(({icon, title, description}) => (<SwiperSlide className="theSwiper"
+            // style={{backgroundImage:"url(https://swiperjs.com/demos/images/nature-1.jpg)", }}
           >
-            Slide 1
-          </SwiperSlide>
-          <SwiperSlide 
-            style={{
-              backgroundImage:
-                "url(https://swiperjs.com/demos/images/nature-2.jpg)",
-            }}
+            <div style={{height: '100%', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '10px'}}>
+              <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                {icon}
+              </div>
+              <div className="ServiceHeading">
+                <p style={{color: 'black', textAlign: 'center'}}>{title}</p>
+              </div>
+              <div>
+                <p style={{color: 'black', textAlign: 'center'}}>{description}</p>
+              </div>
+            </div>
+          </SwiperSlide>))}
+          {/* <SwiperSlide className="theSwiper"
+            // style={{backgroundImage:"url(https://swiperjs.com/demos/images/nature-2.jpg)",}}
           >
             Slide 2
           </SwiperSlide>
-          <SwiperSlide
-            style={{
-              backgroundImage:
-                "url(https://swiperjs.com/demos/images/nature-3.jpg)"
-            }}
+          <SwiperSlide className="theSwiper"
+            // style={{backgroundImage:"url(https://swiperjs.com/demos/images/nature-3.jpg)"}}
           >
             Slide 3
           </SwiperSlide>
-          <SwiperSlide
-            style={{
-              backgroundImage:
-                "url(https://swiperjs.com/demos/images/nature-4.jpg)"
-            }}
+          <SwiperSlide className="theSwiper"
+            // style={{ backgroundImage: "url(https://swiperjs.com/demos/images/nature-4.jpg)"}}
           >
             Slide 4
           </SwiperSlide>
-          <SwiperSlide
-            style={{
-              backgroundImage:
-                "url(https://swiperjs.com/demos/images/nature-5.jpg)"
-            }}
+          <SwiperSlide className="theSwiper"
+            // style={{backgroundImage:"url(https://swiperjs.com/demos/images/nature-5.jpg)"}}
           >
             Slide 5
           </SwiperSlide>
-          <SwiperSlide
-            style={{
-              backgroundImage:
-                "url(https://swiperjs.com/demos/images/nature-6.jpg)"
-            }}
+          <SwiperSlide className="theSwiper"
+            // style={{backgroundImage:"url(https://swiperjs.com/demos/images/nature-6.jpg)"}}
           >
             Slide 6
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              backgroundImage:
-                "url(https://swiperjs.com/demos/images/nature-7.jpg)"
-            }}
-          >
-            Slide 7
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
   </ServicesCarousel>
   )
@@ -145,7 +129,7 @@ const ServicesCarousel = styled.div`
     /* padding-bottom: 80px; */
     /* padding-right: 80px; */
     /* margin: 0 auto; */
-    padding: 50px;
+    padding: 13vh;
 
     /* width: 100%; */
     background-color:  #f63309;
@@ -170,6 +154,7 @@ const OurServicesTextContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
     /* padding-left: 70px;
     padding-right: 70px; */
     /* border: 2px solid white; */
@@ -179,13 +164,14 @@ const OurServicesTextContainer = styled.div`
         color: #FFB733;
         font-size: 30px;
         font-weight: 600;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     > p {
         color: white;
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 18px;
+        /* font-weight: 300; */
+        line-height: 25px;
         font-family: 'Open Sans', sans-serif;
     }
 `

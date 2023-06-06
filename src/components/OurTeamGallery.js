@@ -17,7 +17,7 @@ export default OurTeamGallery;
 const ImageItem = styled.div`
     width: 400px;
     height: 300px;
-    background-color: #333;
+    background-color: #2D2E32;
     display: flex;
     flex-direction: column;
     justify-content: center;

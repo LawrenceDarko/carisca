@@ -15,7 +15,7 @@ export default OtherPagesCarousel;
 
 const PageHeaderImageContainer = styled.div`
     height: 20vh;
-    background-color: #333;
+    background-color: #2D2E32;
     display: flex;
     flex-direction: column;
     align-content: center;
