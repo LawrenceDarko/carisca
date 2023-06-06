@@ -5,7 +5,7 @@ import About from './pages/AboutP.js';
 import Media from './pages/MediaP.js';
 import Projects from './pages/ProjectsP.js';
 import Team from './pages/TeamP.js';
-import Partnerships from './pages/Partnerships.js';
+import Partnerships from './pages/PartnershipsP.js';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

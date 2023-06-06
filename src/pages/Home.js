@@ -5,7 +5,7 @@ import PageCarousel from '../components/PageCarousel'
 import OurServices from '../components/OurServices'
 import Footer from '../components/Footer'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import Partnerships from "./Partnerships"
+import Partnerships from "./PartnershipsP"
 import { MdOutlineDesignServices } from "react-icons/md";
 import { SiAltiumdesigner } from "react-icons/si";
 import { GoTelescope, GoLightBulb } from "react-icons/go";
